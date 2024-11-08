@@ -1,0 +1,5 @@
+https://miro.medium.com/v2/resize:fit:1100/format:webp/1*VKPTjkS9FpBZtfsy4_Sb1g.png
+https://miro.medium.com/v2/resize:fit:1100/format:webp/1*VKPTjkS9FpBZtfsy4_Sb1g.png
+
+SELECT date, case when state in ('10, '20', '30') then 'North' else 'South' end as region,
+state, shop_no, cust_id, product, qty from sales_data

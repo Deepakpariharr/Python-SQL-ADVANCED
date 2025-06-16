@@ -78,22 +78,22 @@ class amount_calculations:
 #     return reverse_string
 
 
-def reverse_string(input_string):
-    words = list(input_string)
-    i, j = 0, len(words) - 1
-    while i < j:
-        words[i], words[j] = words[j], words[i]
-        i +=1 
-        j -=1
+# def reverse_string(input_string):
+#     words = list(input_string)
+#     i, j = 0, len(words) - 1
+#     while i < j:
+#         words[i], words[j] = words[j], words[i]
+#         i +=1 
+#         j -=1
 
-    reverse_string= ''.join(words)
+#     reverse_string= ''.join(words)
 
-    return reverse_string
+#     return reverse_string
 
-original_string = "Hello, Terence"
-reverse_result = reverse_string(original_string)
-print("Original_String:", original_string)
-print("Reversed_ String:", reverse_result)
+# original_string = "Hello, Terence"
+# reverse_result = reverse_string(original_string)
+# print("Original_String:", original_string)
+# print("Reversed_ String:", reverse_result)
 
 
 

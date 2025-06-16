@@ -1,14 +1,14 @@
-type_of_currency = {
-    'BTC': [{'asset': 'bitcoin', 'usd': '30000'}]
-}
+# type_of_currency = {
+#     'BTC': [{'asset': 'bitcoin', 'usd': '30000'}]
+# }
 
-key_of_crypto = 'BTC'
-asset_of_crypto = 'bitcoin'
-required_value = 'usd'
+# key_of_crypto = 'BTC'
+# asset_of_crypto = 'bitcoin'
+# required_value = 'usd'
 
-type_rate = [{'symbol': 'USDINR', 'rate': '83.2'}]
-symbol_rate = 'USDINR'
-required_rate = 'rate'
+# type_rate = [{'symbol': 'USDINR', 'rate': '83.2'}]
+# symbol_rate = 'USDINR'
+# required_rate = 'rate'
 
 class amount_calculations:
     @staticmethod
@@ -22,16 +22,44 @@ class amount_calculations:
                 result2 = i[required_rate]
                 print(result2)
 
-        result3 = float(result1)*float(result2)
-        print(result3, "amount")
-        return result3
+#         result3 = float(result1)*float(result2)
+#         print(result3, "amount")
+#         return result3
     
-amount_calculations.crypto_exchange_value(
-    type_of_currency,
-    key_of_crypto,
-    asset_of_crypto,
-    required_value,
-    type_rate,
-    symbol_rate,
-    required_rate  
-)
+# amount_calculations.crypto_exchange_value(
+#     type_of_currency,
+#     key_of_crypto,
+#     asset_of_crypto,
+#     required_value,
+#     type_rate,
+#     symbol_rate,
+
+# def word_count(paragraph_words):
+#     output = dict()
+#     words_list = paragraph_words.split()
+#     for i in words_list:
+#         if i in output:
+#             output[i] +=1
+
+#         else:
+#             output[i] = 1
+#         print(output)
+
+#     return output
+
+# print(word_count('the quick brown box python for jumps over python the lazy dog ans python'))
+
+def word_count(paragraph_words):
+    output = dict()
+    words_list = paragraph_words.split()
+    for i in words_list:
+        if i in output:
+           output[i] += 1
+        else:
+            output[i] = 1
+        print(output)
+
+    return(output)
+
+print(word_count('the quick fix'))
+

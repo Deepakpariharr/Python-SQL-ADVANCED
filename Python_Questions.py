@@ -49,17 +49,67 @@ class amount_calculations:
 
 # print(word_count('the quick brown box python for jumps over python the lazy dog ans python'))
 
-def word_count(paragraph_words):
-    output = dict()
-    words_list = paragraph_words.split()
-    for i in words_list:
-        if i in output:
-           output[i] += 1
-        else:
-            output[i] = 1
-        print(output)
+# def word_count(paragraph_words):
+#     output = dict()
+#     words_list = paragraph_words.split()
+#     for i in words_list:
+#         if i in output:
+#            output[i] += 1
+#         else:
+#             output[i] = 1
+#         print(output)
 
-    return(output)
+#     return(output)
 
-print(word_count('the quick fix'))
+# print(word_count('the quick fix'))
+
+
+# def find_largest_number(numbers):
+#     largest_number = max(numbers, default=None)
+#     return largest_number
+
+# number_list = [3,8,1,5,9,303, 5]
+# result = find_largest_number(number_list)
+# print("The largesr_number is:", result)
+
+
+# def reverse_string(input_string):
+#     reversed_string = input_string[::-1]
+#     return reverse_string
+
+
+def reverse_string(input_string):
+    words = list(input_string)
+    i, j = 0, len(words) - 1
+    while i < j:
+        words[i], words[j] = words[j], words[i]
+        i +=1 
+        j -=1
+
+    reverse_string= ''.join(words)
+
+    return reverse_string
+
+original_string = "Hello, Terence"
+reverse_result = reverse_string(original_string)
+print("Original_String:", original_string)
+print("Reversed_ String:", reverse_result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

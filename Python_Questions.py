@@ -190,29 +190,101 @@
                     
 #counting digits, letters, and spaces in a String
 
-import re
-name = 'Python is 1'
-digitcount = re.sub("[^0-9","",name)
-lettercount = re.sub("[^a-zA-z]","",name)
-spacecount= re.findall("[\s", name)
+# import re
+# name = 'Python is 1'
+# digitcount = re.sub("[^0-9","",name)
+# lettercount = re.sub("[^a-zA-z]","",name)
+# spacecount= re.findall("[\s", name)
 
-print(len(digitcount))
-print(len(lettercount))
-print(len(spacecount))
-
-def count_sp_char(string):
-    sp_char = "!@#$%^&*()??[]{};:~`"
-    count = 0
-    for i in string:
-        if i in sp_char:
-            count +=1
-    return count
-
-text = "Hello! How are you? #specialchars! 123"
-result = count_sp_char(text)
-print(count)
+# print(len(digitcount))
+# print(len(lettercount))
+# print(len(spacecount))
 
 
+# def count_sp_char(string):
+#     sp_char = "!@#$%6&*()<>?/\[]{};:~`"
+#     count = 0
+#     for i in string:
+#         if i in sp_char:
+#             count+=1
+#     return count
 
+
+# string = 'Hello! How are you? #specialchars! 123'
+# result = count_sp_char(string)
+# print(result)
+
+#removing all the whitespaces in a string
+# import re
+# string = "C O D E"
+# spaces = re.compile(r'\s+')
+# result = re.sub(spaces, "", string)
+# print(result)
+
+
+# string = "C O D E"
+# string2 = "".join(char for char in string if char !=" ")
+# print(string2)
+
+
+
+# string = 'C O D E'
+# string2 = string.replace(" ","")
+# print(string2)
+
+
+#Randomizing the items of a list in python
+# from random import shuffle
+# lst = ['Python', 'is', 'fuckimg', 'good']
+# shuffle(lst)
+# print(lst)
+
+#create generator to product first n prime numbers
+
+# def isprime(num):
+#      for i in range(2, num):
+#           if num%1 == 0:
+#                return False
+#      return True
+
+# def prime_generator(n):
+#      num = 2
+#      while n:
+#           if isprime(n):
+#                '''
+#                #yield keyword used to return a value and then the code is resumed'''
+
+#                yield num
+#                n-=1
+#           num+=1
+
+# x =int(input("Enter no of prime numbers required"))
+# it = prime_generator(x)
+# for e in it:
+#      print(e, end=" ")
+
+# def prime(n):
+#     Flag = False
+#     if n< 2:
+#         return Flag
+#     else:
+#         for i in range(2, n):
+#             if n%i==0:
+#                 return Flag
+#             else:
+#                 Flag = True
+#                 return Flag
+    
+# num = int(input("Enter a number:"))
+# prime(num)
+
+# def average(*t):
+#     avg = sum(t)/len(t)
+#     return avg
+# result1 = average(32,5,65,22,87,34,2,57)
+# result2 = average(5,10,15,20,25,30,35,40,45,50)
+
+# print("Average is:", result1)
+# print("Average is:", result2)
 
 
